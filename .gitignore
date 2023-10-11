@@ -675,4 +675,4 @@ pip-selfcheck.json
 */.ipynb_checkpoints/*
 .jupyter_ystore.db
 
-docs/_build
+_build
