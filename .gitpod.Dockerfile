@@ -8,7 +8,7 @@ RUN pip install jupyterlab mysql-connector-python ipywidgets ipython-sql jupyter
 
 RUN npm install -g mystmd
 
-RUN sudo apt update && sudo apt install -y plantuml libxcursor1 libXdamage libgtk-3-0 
+RUN sudo apt update && sudo apt install -y plantuml libxcursor1 libxdamage-dev libgtk-3-0
 
 # Install custom tools, runtimes, etc.
 # For example "bastet", a command-line tetris clone:
