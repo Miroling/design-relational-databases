@@ -1,5 +1,4 @@
-image:
-  file: .gitpod.Dockerfile
+image: ghcr.io/miroling/design-relational-databases:release
 
 tasks:
   - command: |
