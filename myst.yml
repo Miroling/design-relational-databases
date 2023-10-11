@@ -1,0 +1,10 @@
+version: 1
+site:
+  title: Spook 👻 a scary powerful toolbox for Home Assistant.
+  template: book-theme
+  logo_text: Production Ready
+  logo: img/logo-color.png
+  logo_dark: img/logo-white.png
+  
+project:
+  keywords: []

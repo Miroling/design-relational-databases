@@ -1,0 +1,24 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - command: |
+      eval $(gp env -e)
+      jupyter lab --JupyterApp.config_file=/workspace/database-design/jupyter_notebook_config.py
+
+ports:
+  - port: 8888
+    visibility: public
+
+vscode:
+  extensions:
+    - shd101wyy.markdown-preview-enhanced
+    - codezombiech.gitignore
+    - shivaprasanth.code-notebook-plantuml
+    - ms-toolsai.jupyter
+    - ms-python.python
+    - ms-toolsai.jupyter-keymap
+    - ms-toolsai.vscode-jupyter-cell-tags
+    - ms-toolsai.vscode-jupyter-slideshow
+    - ms-toolsai.jupyter-renderers
+    - chrisjsewell.myst-tml-syntax
