@@ -6,7 +6,7 @@
 #######################################################################################
 # Book settings
 title                       : Проектування реляційних баз даних  # The title of the book. Will be placed in the left navbar.
-author                      : Taras Omelianenko  # The author of the book
+author                      : ""  # The author of the book
 copyright                   : "2023"  # Copyright year to be placed in the footer
 
 # Force re-execution of notebooks on each build.
@@ -23,15 +23,17 @@ latex:
 sphinx:
   config:
     language: uk
-    show_authors: false
     html_context:
       default_mode: "light"
       github_user: "Miroling"
       github_repo: "design-relational-databases"
       github_version: "main"
+      github_url: "https://github.com"
+      use_repository_button:
     html_show_copyright: false
     html_theme_options: 
-      use_edit_page_button: true  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
+      use_edit_page_button: true
+      use_repository_button: true
       logo:
         image_light: img/logo-color.png
         image_dark: img/logo-white.png
