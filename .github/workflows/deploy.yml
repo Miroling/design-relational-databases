@@ -9,6 +9,9 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+env:
+  BASE_URL: /${{ github.event.repository.name }}
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -28,26 +31,17 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ${{ matrix.os }}
+    container: ghcr.io/${{ github.repository }}
     strategy:
       matrix:
         os: [ubuntu-latest]
-        python-version: [3.8]
     steps:
     - uses: actions/checkout@v2
-
-    # Install dependencies
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v1
-      with:
-        python-version: ${{ matrix.python-version }}
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
 
     # Build the book
     - name: Build the book
       run: |
-        jupyter-book build book
+        myst build --html
 
     # Deploy the book's HTML to gh-pages branch
     - name: Setup Pages
@@ -56,7 +50,7 @@ jobs:
       uses: actions/upload-pages-artifact@v2
       with:
         # Upload entire repository
-        path: book/_build/html
+        path: _build/html
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v2
