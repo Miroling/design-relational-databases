@@ -19,31 +19,21 @@ latex:
   latex_documents:
     targetname: book.tex
 
-# Information about where the book exists on the web
-repository:
-  url: https://github.com/Miroling/design-relational-databases  # Online location of your book
-  path_to_book: .  # Optional path to your book, relative to the repository root
-  branch: main  # Which branch of the repository should be used when creating links (optional)
-
-# Add GitHub buttons to your book
-# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
-#######################################################################################
-# HTML-specific settings
-html:
-  use_edit_page_button      : true  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
-  use_repository_button     : true  # Whether to add a link to your repository button
-  use_issues_button         : true  # Whether to add an "open an issue" button
-  use_multitoc_numbering    : true   # Continuous numbering across parts/chapters
-  home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
-  baseurl                   : "https://miroling.github.io/design-relational-databases/"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
-
-#######################################################################################
 
 sphinx:
-  html_context:
-    default_mode: light
   config:
+    language: uk
+    show_authors: false
+    html_context:
+      default_mode: "light"
+      github_user: "Miroling"
+      github_repo: "design-relational-databases"
+      github_version: "main"
+    html_show_copyright: false
     html_theme_options: 
+      use_edit_page_button: true  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
       logo:
         image_light: img/logo-color.png
         image_dark: img/logo-white.png
+      extra_footer: |
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://miroling.github.io/design-relational-databases/">Проектування реляційних баз даних</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://taras.pro">Омеляненко Тарас</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>

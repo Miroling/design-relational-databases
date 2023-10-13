@@ -1,4 +1,4 @@
-image: ghcr.io/miroling/design-relational-databases:release
+image: ghcr.io/miroling/design-relational-databases:main
 
 tasks:
   - command: |

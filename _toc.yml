@@ -2,9 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
-options:
-  numbered: true
+root: index
 chapters:
 - file: 01-about
 - file: 02-database-design
