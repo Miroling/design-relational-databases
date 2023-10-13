@@ -2,9 +2,11 @@ version: 1
 site:
   title: Проектування реляційних баз даних
   template: book-theme
-  logo_text: ""
+  logo_text: " "
   logo: img/logo-color.png
   logo_dark: img/logo-white.png
   
 project:
   keywords: []
+  thebe:
+    server: true
