@@ -31,7 +31,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ${{ matrix.os }}
-    container: ghcr.io/${{ github.repository }}
+    container: ghcr.io/${{ github.repository }}:release
     strategy:
       matrix:
         os: [ubuntu-latest]
