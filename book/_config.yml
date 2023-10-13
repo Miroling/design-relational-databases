@@ -43,3 +43,7 @@ html:
   baseurl                   : "https://miroling.github.io/design-relational-databases/"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
 
 #######################################################################################
+
+sphinx:
+  html_context:
+    default_mode: light
