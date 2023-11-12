@@ -46,10 +46,12 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
   publish:
-    runs-on: ghcr.io/${{ github.repository }}:${{ steps.meta.outputs.tags }}
+    runs-on: ubuntu-latest
+    container: 
+      image: ghcr.io/${{ github.repository }}:${{ steps.meta.outputs.tags }}
+      credentials:
+         username: ${{ github.actor }}
+         password: ${{ secrets.github_token }}
     steps:
       - name: Build and push Docker image
-        run: |
-            echo "::group::My title"
-            echo "Inside group"
-            echo "::endgroup::"
+        run: echo "::endgroup::"
