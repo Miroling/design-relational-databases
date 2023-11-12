@@ -1,0 +1,38 @@
+@startuml
+skinparam monochrome true
+skinparam defaultFontName Courier
+
+!define table(x) class x << (T,#ffebf3) >>
+hide methods
+hide stereotypes
+
+
+table(books) {
+    {field} +id             int
+    {field} category_id     int
+    {field} year            ?int
+    {field} title           char(255)
+}
+
+
+table(books_authors) {
+    {field} +book_id    int
+    {field} +author_id  int
+}
+
+books <-- books_authors : on id = book_id
+authors <-- books_authors : on id = author_id
+
+table(authors) {
+    {field} +id     int
+    {field} name    char(25)
+}
+
+categories <-- books : on id = category_id
+
+table(categories) {
+    {field} +id     int
+    {field} name    char(25)
+}
+
+@enduml 

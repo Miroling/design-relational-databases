@@ -3,6 +3,7 @@ image: ghcr.io/miroling/design-relational-databases:main
 tasks:
   - command: |
       eval $(gp env -e)
+      export DISPLAY_URL=$(echo "https://8888-$GITPOD_WORKSPACE_ID.$GITPOD_WORKSPACE_CLUSTER_HOST")
       jupyter lab --JupyterApp.config_file=jupyter_notebook_config.py
 
 ports:

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="395px" preserveAspectRatio="none" style="width:445px;height:395px;" version="1.1" viewBox="0 0 445 395" width="445px" zoomAndPan="magnify"><defs><filter height="300%" id="f1sx6yy4ewb7w9" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[0a3b6b3c0ee593bc321da58ef428a52e]
+class books--><rect fill="#F8F8F8" filter="url(#f1sx6yy4ewb7w9)" height="91.2188" id="books" style="stroke: #383838; stroke-width: 1.5;" width="201" x="179.5" y="151"/><ellipse cx="258.25" cy="167" fill="#F1F1F1" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M259.0938,173.75 L256.6406,173.75 L256.6406,163.5 L253.5,163.5 L253.5,161.3594 L262.2344,161.3594 L262.2344,163.5 L259.0938,163.5 L259.0938,173.75 Z "/><text fill="#000000" font-family="Courier" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="35" x="278.75" y="171.1543">books</text><line style="stroke: #383838; stroke-width: 1.5;" x1="180.5" x2="379.5" y1="183" y2="183"/><ellipse cx="190.5" cy="194" fill="none" rx="3" ry="3" style="stroke: #545454; stroke-width: 1.0;"/><text fill="#000000" font-family="Courier" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="126" x="199.5" y="197.2104">id             int</text><text fill="#000000" font-family="Courier" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="133" x="199.5" y="210.0151">category_id     int</text><text fill="#000000" font-family="Courier" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="140" x="199.5" y="222.8198">year            ?int</text><text fill="#000000" font-family="Courier" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="175" x="199.5" y="235.6245">title           char(255)</text><!--MD5=[c918944956a80fc31029c1ed2a17f2f2]
+class books_authors--><rect fill="#F8F8F8" filter="url(#f1sx6yy4ewb7w9)" height="65.6094" id="books_authors" style="stroke: #383838; stroke-width: 1.5;" width="124" x="102" y="319"/><ellipse cx="117.45" cy="335" fill="#F1F1F1" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M118.2938,341.75 L115.8406,341.75 L115.8406,331.5 L112.7,331.5 L112.7,329.3594 L121.4344,329.3594 L121.4344,331.5 L118.2938,331.5 L118.2938,341.75 Z "/><text fill="#000000" font-family="Courier" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="91" x="131.55" y="339.1543">books_authors</text><line style="stroke: #383838; stroke-width: 1.5;" x1="103" x2="225" y1="351" y2="351"/><ellipse cx="113" cy="362" fill="none" rx="3" ry="3" style="stroke: #545454; stroke-width: 1.0;"/><text fill="#000000" font-family="Courier" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="98" x="122" y="365.2104">book_id    int</text><ellipse cx="113" cy="374.8047" fill="none" rx="3" ry="3" style="stroke: #545454; stroke-width: 1.0;"/><text fill="#000000" font-family="Courier" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="98" x="122" y="378.0151">author_id  int</text><!--MD5=[1aa4b0d08578cc08712834368feed0d2]
+class authors--><rect fill="#F8F8F8" filter="url(#f1sx6yy4ewb7w9)" height="65.6094" id="authors" style="stroke: #383838; stroke-width: 1.5;" width="138" x="6" y="163.5"/><ellipse cx="46.65" cy="179.5" fill="#F1F1F1" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M47.4938,186.25 L45.0406,186.25 L45.0406,176 L41.9,176 L41.9,173.8594 L50.6344,173.8594 L50.6344,176 L47.4938,176 L47.4938,186.25 Z "/><text fill="#000000" font-family="Courier" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="49" x="66.35" y="183.6543">authors</text><line style="stroke: #383838; stroke-width: 1.5;" x1="7" x2="143" y1="195.5" y2="195.5"/><ellipse cx="17" cy="206.5" fill="none" rx="3" ry="3" style="stroke: #545454; stroke-width: 1.0;"/><text fill="#000000" font-family="Courier" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="70" x="26" y="209.7104">id     int</text><text fill="#000000" font-family="Courier" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="112" x="26" y="222.5151">name    char(25)</text><!--MD5=[8d53228b184e70212eb202c858fab81b]
+class categories--><rect fill="#F8F8F8" filter="url(#f1sx6yy4ewb7w9)" height="65.6094" id="categories" style="stroke: #383838; stroke-width: 1.5;" width="138" x="211" y="8"/><ellipse cx="242.2" cy="24" fill="#F1F1F1" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M243.0438,30.75 L240.5906,30.75 L240.5906,20.5 L237.45,20.5 L237.45,18.3594 L246.1844,18.3594 L246.1844,20.5 L243.0438,20.5 L243.0438,30.75 Z "/><text fill="#000000" font-family="Courier" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="259.8" y="28.1543">categories</text><line style="stroke: #383838; stroke-width: 1.5;" x1="212" x2="348" y1="40" y2="40"/><ellipse cx="222" cy="51" fill="none" rx="3" ry="3" style="stroke: #545454; stroke-width: 1.0;"/><text fill="#000000" font-family="Courier" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="70" x="231" y="54.2104">id     int</text><text fill="#000000" font-family="Courier" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="112" x="231" y="67.0151">name    char(25)</text><!--MD5=[026977484e49239450efa205a804ec8e]
+reverse link books to books_authors--><path d="M254.73,246.68 C246.61,260.85 237.09,275.98 227,289 C219.01,299.31 209.38,309.61 200.08,318.77 " fill="none" id="books&lt;-books_authors" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="#383838" points="257.21,242.32,249.2967,248.1834,254.7478,246.6717,256.2595,252.1229,257.21,242.32" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="Courier" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="120" x="239" y="285.0669">on id = book_id</text><!--MD5=[4b1e0323e4b6bba5cbce03ccd51c3afe]
+reverse link authors to books_authors--><path d="M72.62,235.13 C73.1,252.49 76,272.8 85,289 C91.35,300.43 100.76,310.48 110.89,318.99 " fill="none" id="authors&lt;-books_authors" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="#383838" points="72.55,229.84,68.679,238.8962,72.6214,234.8395,76.6782,238.7819,72.55,229.84" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="Courier" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="136" x="86" y="285.0669">on id = author_id</text><!--MD5=[ca1bd52e358bccee9aa398492d87e6ac]
+reverse link categories to books--><path d="M280,79.25 C280,100.83 280,128.13 280,150.85 " fill="none" id="categories&lt;-books" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="#383838" points="280,74.18,276,83.18,280,79.18,284,83.18,280,74.18" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="Courier" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="152" x="281" y="117.0669">on id = category_id</text><!--MD5=[a3e3465100fd5027b04efc83fa2454e4]
+@startuml
+skinparam monochrome true
+skinparam defaultFontName Courier
+
+hide methods
+hide stereotypes
+
+
+class books << (T,#ffebf3) >> {
+    {field} +id             int
+    {field} category_id     int
+    {field} year            ?int
+    {field} title           char(255)
+}
+
+
+class books_authors << (T,#ffebf3) >> {
+    {field} +book_id    int
+    {field} +author_id  int
+}
+
+books <- - books_authors : on id = book_id
+authors <- - books_authors : on id = author_id
+
+class authors << (T,#ffebf3) >> {
+    {field} +id     int
+    {field} name    char(25)
+}
+
+categories <- - books : on id = category_id
+
+class categories << (T,#ffebf3) >> {
+    {field} +id     int
+    {field} name    char(25)
+}
+
+@enduml 
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.20+8-LTS
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

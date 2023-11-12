@@ -19,9 +19,13 @@ latex:
   latex_documents:
     targetname: book.tex
 
-
 sphinx:
   config:
+    numfig_format:
+      figure: "Рисунок %s."
+      table: "Таблиця %s."
+      code-block: "Лістинг %s."
+      section: "Розділ %s."
     language: uk
     html_context:
       default_mode: "light"

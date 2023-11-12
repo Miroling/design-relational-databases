@@ -2,10 +2,19 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: index
-chapters:
-- file: 01-about
-- file: 02-database-design
-- file: 03-sql
-- file: 04-indexes
-
+root:  README.md
+parts:
+  - chapters:
+    - file: 01-about
+  - caption: Практикум
+    chapters:
+    - file: 02-database-design
+    - file: 03-sql-structure
+    - file: 04-sql-insert
+    - file: 05-sql-select
+    - file: 06-sql-update
+    - file: 07-sql-delete
+    - file: 08-sql-joins
+  - caption: Додатки
+    chapters:
+    - file: 03-sql-workbook.ipynb

@@ -1,2 +1,9 @@
 jupyter-book
-sphinx-better-theme
+mysql-connector-python
+ipython-sql
+mysqlclient
+jupysql
+iplantuml
+pygments
+ghp-import
+pyppeteer

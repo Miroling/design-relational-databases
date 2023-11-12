@@ -665,7 +665,7 @@ c.ServerApp.allow_remote_access = True
 #          cannot be determined reliably by the Jupyter server (proxified
 #          or containerized setups for example).
 #  Default: ''
-c.ServerApp.custom_display_url = 'https://8888-' + os.environ.get('GITPOD_WORKSPACE_ID') + '.' + os.environ.get('GITPOD_WORKSPACE_CLUSTER_HOST')
+c.ServerApp.custom_display_url = os.environ.get('DISPLAY_URL', 'http://localhost:8888')
 
 ## The default URL to redirect to from `/`
 #  Default: '/'

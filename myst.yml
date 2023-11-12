@@ -5,8 +5,19 @@ site:
   logo_text: " "
   logo: img/logo-color.png
   logo_dark: img/logo-white.png
+  twitter: miroling
   
 project:
+  title: Проектування реляційних баз даних
   keywords: []
-  thebe:
-    server: true
+  open_access: false
+  license: CC-BY-4.0
+  github: https://github.com/Miroling/design-relational-databases
+  date: 2023/11/12
+  authors:
+    - name: Омеляненко Тарас
+      orcid: 0009-0000-8108-5648
+      twitter: miroling
+      github: https://github.com/Miroling
+      roles: writing
+      url: https://taras.pro
