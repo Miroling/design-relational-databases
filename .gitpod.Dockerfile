@@ -10,6 +10,8 @@ RUN npm install -g mystmd
 
 RUN sudo apt update && sudo apt install -y biber texlive-bibtex-extra texlive-xetex texlive-lang-cyrillic texlive-science texlive-fonts-extra texlive-latex-extra latexmk webp plantuml libxcursor1 libxdamage-dev libgtk-3-0 && sudo ln -s /usr/share/plantuml/plantuml.jar /usr/local/bin/plantuml.jar
 
+RUN sudo apt update && sudo apt install -y git
+
 RUN sudo chmod 777 /usr/local/bin/plantuml.jar
 
 RUN sudo sed -i "s|127.0.0.1|0.0.0.0|g" /etc/mysql/mysql.conf.d/mysqld.cnf
