@@ -74,7 +74,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build website
-        run: BASE_URL=${{ steps.deployment.outputs.page_url }} myst build --html
+        run: myst build --html
+        env:
+          BASE_URL: https://miroling.github.io/design-relational-databases/
 
       # Deploy the book's HTML to gh-pages branch
       - name: Setup Pages
