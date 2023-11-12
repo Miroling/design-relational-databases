@@ -45,3 +45,11 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+  publish:
+    runs-on: ghcr.io/${{ github.repository }}:${{ steps.meta.outputs.tags }}
+    steps:
+      - name: Build and push Docker image
+        run: |
+            echo "::group::My title"
+            echo "Inside group"
+            echo "::endgroup::"
